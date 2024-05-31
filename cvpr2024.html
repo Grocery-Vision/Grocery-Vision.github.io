@@ -187,12 +187,14 @@
             <div class="row" , style="margin-left: auto;">
               <p>
 		<h3><b>Track 1: Video Temporal Action Localization (TAL) and Spatial Temporal Action Localization (STAL):</b></h3>
-                <!-- <img src="./img/example_stal.png" style="width:50%;margin-left: 20%;"/><br/><br/> -->
-		<video width="500px" 
-		       height="400px" 
-		       controls="controls">
-		  <source src="./vid/tal-stal-mosaic-final.mp4" type="video/mp4" />
-		</video>
+
+	      <p class="text-center">
+                  <!-- <img src="./img/example_stal.png" style="width:50%;margin-left: 20%;"/><br/><br/> -->
+		  <video width="800px" height="600px" controls="controls">
+		    <source src="./vid/tal-stal-mosaic-final.mp4" type="video/mp4" />
+		  </video>
+	      </p>
+		<br/><br/> 
 		The TAL and STAL challenges aim at localizing products associated with actions of interest in video. The environment the video is captured in is a physical retail grocery store and the capture system consists of a camera mounted on a regular shopping cart looking inwards at the basket volume. The TAL challenge will consist of training a model that localizes temporally, (along the time axis) the actions of interest in each video in the dataset. STAL on the other hand will involve localizing the product associated with the action spatially and temporally in the video. The action of interest in this challenge is one of three common place actions performed by people shopping with grocery carts; Take: Putting a product into the basket, Return: Removing a product out of the basket and Rummage: Moving products around in the basket. We will evaluate the models performance based on frame-mAP (temporal localization) and tube-mAP (spatio-temporal localization).
 		<br/><br/> 
 		In this task, participants will be provided with 73,683 images and annotation pairs for download as training set.
