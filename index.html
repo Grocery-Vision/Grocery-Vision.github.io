@@ -1,7 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GroceryVision@ICCV25</title>
+    <meta name="description" content="GroceryVision Challenge at ICCV 2025">
 
-<head>
+    <!-- Open Graph Related Stuff -->
+    <meta property="og:title" content="The Grocery Vision Challenge">
+    <meta property="og:url" content="https://grocery-vision.github.io">
+    <meta property="og:description" content="CV/ML for Physical Stores">
+    <meta property="og:site_name" content="PhyStore">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/lineabasic.css">
+    <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
 
     <style>
         .center-align {
@@ -11,12 +34,11 @@
         .left-align {
             text-align: left;
         }
+        
         .happy {
             width: 800px;
             margin: 30px;
-            /* border:solid 1px gray; */
             overflow: hidden; 
-
         }
 
         .bdcard {
@@ -64,9 +86,6 @@
         ul {
             list-style-type: disc;
             list-style-position: inside;
-            /*padding-left: 0;*/
-            /*list-style-type: none;*/
-            /*padding: 0;*/
         }
 
         ul li {
@@ -74,166 +93,231 @@
             margin-bottom: 10px;
         }
 
+        div {
+            position: relative;
+        }
 
+        div w {
+            position: absolute;
+            right: 40px;
+            top: 60px;
+            color: white;
+        }
     </style>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GroceryVision@ICCV25</title>
-    <meta name="description" content=" ---">
+  </head>
+  <body>
 
-    <!--Open Graph Related Stuff-->
-    <meta property="og:title" content="The Grocery Vision Challenge"/>
-    <meta property="og:url" content="https://grocery-vision.github.io"/>
-    <meta property="og:description" content="CV/ML for Physical Stores ---"/>
-    <meta property="og:site_name" content="PhyStore"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:image:url" content=""/>
-
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/lineabasic.css">
-    <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/home.css">
-
-</head>
-<body>
-
-<nav class="navbar">
-  <div class="container">
-    <div class="row">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="https://iccv.thecvf.com/"><img src="./img/iccv-navbar-logo.svg" alt="iccv2025 LOGO" style="height:60px;margin-top:3px;"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="dropdown" style="padding-top:10px; float:right;">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Menu
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-            <li><a href="./overview.html">Overview</a></li>
-            <li><a href="https://retailvisionworkshop.github.io">RetailVision Workshop</a></li>
-            <li><a href="https://physicalstoreworkshop.github.io/challenge.html">GroceryVision Challenge@WACV24</a></li>
-            <li><a href="./past_challenge/cvpr2024.html">GroceryVision Challenge@CVPR24</a></li>
-            <li><a href="./past_challenge/wacv2025.html">GroceryVision Challenge@WACV25</a></li>
-            <li><a href="./index.html">GroceryVision Challenge@ICCV25</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<div class="container">
-    <div class="page-content">
-
-        <p><br/></p>
-        <style type="text/css">
-            * {
-                margin: 0px;
-                padding: 0px;
-            }
-
-            div {
-                position: relative;
-            }
-
-            div w {
-                position: absolute;
-                right: 40px;
-                top: 60px;
-                color: white;
-            }
-        </style>
-        <div>
-            <img src="./img/hawaii.jpg" style="width:100%; min-height:200px;"/>
-            <font size="6"><strong>
-                <w style="line-height:0.8; text-align: right; margin-top: 240px; margin-left: 50px;">
-                    <a href="https://retailvisionworkshop.github.io"> ICCV25 RetailVision Workshop </a>
-                    <pr/>
-                </w>
-            </strong></font>
-
-            <font size="8"><strong>
-                <w style="line-height:0.8; text-align: center; margin-top: 250px"><br> The 4th GroceryVision Challenge <br/></w>
-            </strong></font>
-
-            <font size="6">
-                <w style="line-height:0.6; margin-top: 255px"><br><br><br><br><br>Time TBD, Saturday, October 18th, 2025,
-                    Honolulu, HI<br/><br/><br/><br/><br/></w>
-            </font>
-
-        </div>
-
-        <div>
-            <div class="left-align" id="challenges">
-                <div class="col-xs-12">
-                    <br/><br/>
-                    <h1><b>Dataset Challenges</b></h1>
-                    <br/>
-		    <p>
-		      As part of the RetailVision workshop, two challenge tracks will be made available from the Grocery Vision 2023 datset consisting of real-world, physical retail data collected in typical grocery store environments. These challenge datasets contain anonymized individual shopping actions collected with a GoPro camera mounted to a standard US shopping cart. These challenges are:
-		    </p>
-                </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="https://iccv.thecvf.com/"><img
+                src="./img/iccv-navbar-logo.svg" alt="iccv2025 LOGO"
+                style="height:60px;margin-top:3px;"></a>
+          </div>
+          <div class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1">
+            <div class="dropdown" style="padding-top:10px; float:right;">
+              <button class="btn btn-default dropdown-toggle" type="button"
+                id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="true">
+                Menu
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="dropdownMenu1">
+                <li><a href="./overview.html">Overview</a></li>
+                <li><a
+                    href="https://retailvisionworkshop.github.io">RetailVision
+                    Workshop</a></li>
+                <li><a
+                    href="https://physicalstoreworkshop.github.io/challenge.html">GroceryVision
+                    Challenge@WACV24</a></li>
+                <li><a href="./past_challenge/cvpr2024.html">GroceryVision
+                    Challenge@CVPR24</a></li>
+                <li><a href="./past_challenge/wacv2025.html">GroceryVision
+                    Challenge@WACV25</a></li>
+                <li><a href="./index.html">GroceryVision
+                    Challenge@ICCV25</a></li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-            <div class="row" , style="margin-left: auto;">
+    <div class="container">
+      <div class="page-content">
+        <p><br></p>
+        <div>
+          <img src="./img/hawaii.jpg" style="width:100%; min-height:200px;"
+            alt="Hawaii">
+          <strong>
+            <w
+              style="line-height:0.8; text-align: right; margin-top: 240px; margin-left: 50px; font-size: 24px;">
+              <a href="https://retailvisionworkshop.github.io"> ICCV25
+                RetailVision Workshop </a>
+            </w>
+          </strong>
+
+          <strong>
+            <w
+              style="line-height:0.8; text-align: center; margin-top: 250px; font-size: 32px;"><br>
+              The 4th GroceryVision Challenge <br></w>
+          </strong>
+
+          <w
+            style="line-height:0.6; margin-top: 255px; font-size: 24px;"><br><br><br><br><br>Time
+            TBD, Saturday, October 18th, 2025,
+            Honolulu, HI<br><br><br><br><br></w>
+        </div>
+
+        <div>
+          <div class="left-align" id="challenges">
+            <div class="col-xs-12">
+              <br><br>
+              <h1><b>Dataset Challenges</b></h1>
+              <br>
               <p>
-		<h3><b>Track 1: Video Temporal Action Localization (TAL) and Spatial Temporal Action Localization (STAL):</b></h3>
-
-	      <p class="text-center">
-                  <!-- <img src="./img/example_stal.png" style="width:50%;margin-left: 20%;"/><br/><br/> -->
-		  <video width="800px" height="600px" controls="controls">
-		    <source src="./vid/tal-stal-mosaic-final.mp4" type="video/mp4" />
-		  </video>
-	      </p>
-		<br/><br/> 
-		The TAL and STAL challenges aim at localizing products associated with actions of interest in video. The environment the video is captured in is a physical retail grocery store and the capture system consists of a camera mounted on a regular shopping cart looking inwards at the basket volume. The TAL challenge will consist of training a model that localizes temporally, (along the time axis) the actions of interest in each video in the dataset. STAL on the other hand will involve localizing the product associated with the action spatially and temporally in the video. The action of interest in this challenge is one of three common place actions performed by people shopping with grocery carts; Take: Putting a product into the basket, Return: Removing a product out of the basket and Rummage: Moving products around in the basket. We will evaluate the models performance based on frame-mAP (temporal localization) and tube-mAP (spatio-temporal localization).
-		<br/><br/> 
-		In this task, participants will be provided with 73,683 images and annotation pairs for download as training set.
-                <br/><br/>
-		<h3><b>Track 2: Multi-modal Product Retrieval (MPR):</b></h3>
-                <img src="./img/example_mpr.png" style="width:60%; margin-left: 15%;"/><br/><br/>
-		The goal of MPR challenge is to retrieve the product identity from an open pool of candidate products. Participants will be given a training dataset consisting of (i) images for different products, and (ii) textual description of the products, and are expected to design methods to accurately retrieve the product identity by measuring similarity between images and textual descriptions. For evaluation, a held out set of probe images and a pool of textual description of catalog products will be passed to the model. The model is expected to output a ranked list of catalog products based on the similarity between images and descriptions. We use Cumulative Matching Characteristics (CMC) to evaluate performance of each solution.
-                <!-- ABV challenge aims at validating if the model is able to match the query product image to the corresponding image in gallery. Participants will be given a training dataset consisting of images for different products and are expected to design methods for accurate matching product identities. During testing, held out query images will be used to probe the proposed model. The model is expected to output a ranking list of items based on the matching the model predicts. To evaluate model performance, Cumulative Matching Characteristics (CMC) curves will be used. -->
-		<br/><br/> 
+                As part of the RetailVision workshop, two challenge tracks will
+                be made available from the Grocery Vision 2023 datset consisting
+                of real-world, physical retail data collected in typical grocery
+                store environments. These challenge datasets contain anonymized
+                individual shopping actions collected with a GoPro camera
+                mounted to a standard US shopping cart. These challenges are:
               </p>
-	    </div>
-	    <div class="row">
-	      <div class="col-xs-12">
-                <p>
-                  <b>Download the dataset:</b><br/><br/>
-                  This dataset is released under CC BY-NC 4.0 license. Please review the <a href="docs/LICENSE.pdf">license</a> and an email to <b>retailvision4challenge@amazon.com</b> to receive a link to download the dataset. Please include your (1) name, (2) email (affliation email, not @gmail etc.), (3) purpose of using the dataset. We will respond as soon as possible.
-                </p>
-		  
-                <p>
-                  <b>Submit results:</b> <br/><br/>
-                  To participate in the evaluation, please submit the files necessary to run inference with your method. It will be runned on held out testsets to benchmark with the other submissions.
-                </p>    
-	      </div>
             </div>
+          </div>
+
+          <div class="row" style="margin-left: auto;">
+            <p>
+              <h3><b>Track 1: Video Temporal Action Localization (TAL) and
+                  Spatial Temporal Action Localization (STAL):</b></h3>
+
+              <p class="text-center">
+                <video width="800" height="600" controls>
+                  <source src="./vid/tal-stal-mosaic-final.mp4"
+                    type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </p>
+              <br><br>
+              The TAL and STAL challenges aim at localizing products associated
+              with actions of interest in video. The environment the video is
+              captured in is a physical retail grocery store and the capture
+              system consists of a camera mounted on a regular shopping cart
+              looking inwards at the basket volume. The TAL challenge will
+              consist of training a model that localizes temporally, (along the
+              time axis) the actions of interest in each video in the dataset.
+              STAL on the other hand will involve localizing the product
+              associated with the action spatially and temporally in the video.
+              The action of interest in this challenge is one of three common
+              place actions performed by people shopping with grocery carts;
+              Take: Putting a product into the basket, Return: Removing a
+              product out of the basket and Rummage: Moving products around in
+              the basket. We will evaluate the models performance based on
+              frame-mAP (temporal localization) and tube-mAP (spatio-temporal
+              localization).
+              <br><br>
+              In this task, participants will be provided with 73,683 images and
+              annotation pairs for download as training set.
+              <br><br>
+              <h3><b>Track 2: Multi-modal Product Retrieval (MPR):</b></h3>
+              <img src="./img/example_mpr.png"
+                style="width:60%; margin-left: 15%;" alt="MPR Example"><br><br>
+              The goal of MPR challenge is to retrieve the product identity from
+              an open pool of candidate products. Participants will be given a
+              training dataset consisting of (i) images for different products,
+              and (ii) textual description of the products, and are expected to
+              design methods to accurately retrieve the product identity by
+              measuring similarity between images and textual descriptions. For
+              evaluation, a held out set of probe images and a pool of textual
+              description of catalog products will be passed to the model. The
+              model is expected to output a ranked list of catalog products
+              based on the similarity between images and descriptions. We use
+              Cumulative Matching Characteristics (CMC) to evaluate performance
+              of each solution.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h4><b>Download the dataset:</b></h4>
+              <p>
+                This dataset is released under CC BY-NC 4.0 license. Please
+                review the <a href="docs/LICENSE.pdf">license</a> and an email
+                to <b>retailvision4challenge@amazon.com</b> to receive a link to
+                download the dataset. Please include your (1) name, (2) email
+                (affliation email, not @gmail etc.), (3) purpose of using the
+                dataset. We will respond as soon as possible.
+              </p>
+
+              <h5><b>Submit Results:</b></h5>
+              <p>
+                Once completed, please submit all the files to run your proposed
+                model as a zip file, or a download link to
+                retailvision4challenge@amazon.com. Please provide a Python
+                inference code and instructions to setup the environment. Your
+                submission will be evaluated against a holdout test set which is
+                not released publicly.
+              </p>
+              <p><b>For the TAL Challenge:</b><br>
+                The output of your solution should consist of a set of text
+                files — one per input video. In each text file please list each
+                predicted action in the video on a separate line in the
+                following format:
+                <br>&lt;start_frame, end_frame, action_class, confidence&gt;<br>
+                Please list the confidence associated with the action class
+                which will enable us to compute frame-mAP.
+              </p>
+              <p><b>For the STAL Challenge:</b><br>
+                The output of your solution should consist of a set of text
+                files — one per input video. In each text file please list each
+                predicted action tubelet in the video as a separate element of a
+                list in the following format: [tube_1, tube_2, ..., tube_n]
+                Each tubelet should be formatted like the following:
+                <pre><code>{"track": [[f,x0,y0,x1,y1,c], [f,x0,y0,x1,y1,c], ..., [f,x0,y0,x1,y1,c]], "conf": &lt;float [0-1]&gt;, "cat": &lt;"take"|"return"|"rummage"&gt;}</code></pre>
+                where f,x0,y0,x1,y1, and c refer to frame number, normalized
+                bbox coordinates, and bbox confidence. The "conf" field
+                represents the overall prediction confidence of the tubelet and
+                will be used to compute the tube-mAP score, while "cat" is its
+                predicted action category.
+                Note: We expect bbox predictions to occur on consecutive frames
+                and also expect that you perform your own prediction smoothing
+                across all windows that your model makes predictions for to
+                ensure long actions are combined into a single tubelet.
+              </p>
+              <p><b>For the MBR Challenge:</b><br>
+                Please include python scripts to infer the category based on
+                input images, for example:
+                <pre><code>python infer.py --images ${path to probe images(jpg)} --catalog ${catalog_texts.json} --output ${file containing an ordering of candidate products}.</code></pre>
+                We run the inference on each set of product images in our
+                evaluation dataset.<br>
+                <b>Input:</b> the model should take in a folder containing .jpg
+                images of a product, plus a .json file containing the
+                description of catalog products.<br>
+                <b>Output:</b> For each execution of inference, a .txt output
+                file is expected, which contains the ordering of candidate
+                products for the given probe images. In the resulting .txt file,
+                the ranked list of products is stored, one barcode per row.
+              </p>
+            </div>
+          </div>
         </div>
-	  
+
         <div style="text-align: left;">
           <div class="left-align" id="Dates">
             <div class="col-xs-12">
-              <br/>
+              <br>
               <h1><b>Important Dates</b></h1>
-              <br/>
+              <br>
             </div>
           </div>
 
@@ -246,15 +330,18 @@
             </thead>
             <tbody>
               <tr>
-                <td style="padding-left: 20px;">💪 Challenge Registration Deadline and Training Data Release</td>
+                <td style="padding-left: 20px;">💪 Challenge Registration
+                  Deadline and Training Data Release</td>
                 <td style="padding-left: 20px;">June 6th, 2025</td>
               </tr>
               <tr style="background-color: #f2f2f2;">
-                <td style="padding-left: 20px;">💪 Challenge Results Submission Deadline</td>
+                <td style="padding-left: 20px;">💪 Challenge Results Submission
+                  Deadline</td>
                 <td style="padding-left: 20px;">August 1st, 2025</td>
               </tr>
               <tr>
-                <td style="padding-left: 20px;">💪 Challenge Winner Notification</td>
+                <td style="padding-left: 20px;">💪 Challenge Winner
+                  Notification</td>
                 <td style="padding-left: 20px;">August 22nd, 2025</td>
               </tr>
             </tbody>
@@ -262,82 +349,101 @@
         </div>
 
         <div style="text-align: center;">
-            <div class="left-align" id="orgnizer">
-                <div class="col-xs-12">
-                    <br/><br/>
-                    <h1><b>Organizers</b></h1>
-                    <br/>
+          <div class="left-align" id="orgnizer">
+            <div class="col-xs-12">
+              <br><br>
+              <h1><b>Organizers</b></h1>
+              <br>
+            </div>
+          </div>
+
+          <div class="row" id="org">
+            <div class="col"
+              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+              <div class="circleImg">
+                <a href="https://www.linkedin.com/in/quanfu-fan-84a2185"><img
+                    src="img/quanfu-photo.jpg"
+                    style="border-radius: 60px; width: 120px; height: 120px; object-fit: cover;"
+                    alt="Dr. Quanfu Fan"></a>
+                <div style="display: inline-block; text-align: center;">
+                  <p style="text-align: center; font-size:80%;"> Dr. Quanfu Fan
+                    <br>(Amazon)</p>
                 </div>
+              </div>
             </div>
 
-            <div class="row" id="org">
-    
-                <div class="col" style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-                    <div class="circleImg">
-                        <a href="https://www.linkedin.com/in/quanfu-fan-84a2185"><img src="img/quanfu-photo.jpg"
-                             style="border-radius: 60px; width: 120px; height: 120px; object-fit: cover; text-align: center; caption-side: bottom;"></a>
-                        <caption style="display: inline-block; text-align: center;">
-                            <p style="text-align: center; font-size:80%;"> Dr. Quanfu Fan <br/>(Amazon)</p>
-                        </caption>
-                    </div>
+            <div class="col"
+              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+              <div class="circleImg">
+                <a href="https://weijian-li.github.io/"><img
+                    src="img/Weijian.jpg"
+                    style="border-radius: 60px;" alt="Dr. Weijian Li"></a>
+                <div style="display: inline-block; text-align: center;">
+                  <p style="text-align: center; font-size:80%;"> Dr. Weijian
+                    Li<br>(Amazon)</p>
                 </div>
-
-                <div class="col" style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-                    <div class="circleImg">
-                        <a href="https://weijian-li.github.io/"><img src="img/Weijian.jpg"
-                             style="border-radius: 60px; text-align: center; caption-side: bottom;"></a>
-                        <caption style="display: inline-block; text-align: center;">
-                            <p style="text-align: center; font-size:80%;"> Dr. Weijian Li<br/>(Amazon)</p>
-                        </caption>
-                    </div>
-                </div>
-
-                <div class="col" style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-                    <div class="circleImg">
-                        <a href="https://www.linkedin.com/in/shun-miao-1016511b/"><img src="img/shun-miao.jpeg"
-                             style="border-radius: 60px; text-align: center; caption-side: bottom;"></a>
-                        <caption style="display: inline-block; text-align: center;">
-                            <p style="text-align: center; font-size:80%;"> Dr. Shun Miao <br/>(Amazon)</p>
-                        </caption>
-                    </div>
-                </div>
-
-                <div class="col" style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-                    <div class="circleImg">
-                        <a href="https://www.linkedin.com/in/seanxiangma"><img src="img/Sean.jpeg"
-                             style="border-radius: 60px; text-align: center; caption-side: bottom;"></a>
-                        <caption style="display: inline-block; text-align: center;">
-                            <p style="text-align: center; font-size:80%;"> Dr. Sean Ma <br/>(Amazon)</p>
-                        </caption>
-                    </div>
-                </div>
-
+              </div>
             </div>
+
+            <div class="col"
+              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+              <div class="circleImg">
+                <a href="https://www.linkedin.com/in/shun-miao-1016511b/"><img
+                    src="img/shun-miao.jpeg"
+                    style="border-radius: 60px;" alt="Dr. Shun Miao"></a>
+                <div style="display: inline-block; text-align: center;">
+                  <p style="text-align: center; font-size:80%;"> Dr. Shun Miao
+                    <br>(Amazon)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col"
+              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+              <div class="circleImg">
+                <a href="https://www.linkedin.com/in/seanxiangma"><img
+                    src="img/Sean.jpeg"
+                    style="border-radius: 60px;" alt="Dr. Sean Ma"></a>
+                <div style="display: inline-block; text-align: center;">
+                  <p style="text-align: center; font-size:80%;"> Dr. Sean Ma
+                    <br>(Amazon)</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-
-<div class="container">
-    <div id="sponsors">
-      <div>
-        <br/><br/>
-        <h1><b>Sponsors</b></h1>
       </div>
     </div>
-    <br/>
-    <div class="row" id="org">
-      <div class="col" style="display: block; width: 800px; height: 250px; margin: 0 auto;">
+
+    <div class="container">
+      <div id="sponsors">
         <div>
-          <a href="https://www.amazon.com/b?ie=UTF8&node=21289116011"><img src="./img/wwgst-logo.png" style="border-radius: 10px; text-align: center; caption-side: bottom;"></a>
+          <br><br>
+          <h1><b>Sponsors</b></h1>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="org">
+        <div class="col"
+          style="display: block; width: 800px; height: 250px; margin: 0 auto;">
+          <div>
+            <a href="https://www.amazon.com/b?ie=UTF8&node=21289116011"><img
+                src="./img/wwgst-logo.png" style="border-radius: 10px;"
+                alt="Amazon Logo"></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-<footer>
-<p class="credit" style="text-align: center;"> Website design adapted from <a href="https://nfvlr-workshop.github.io/">NFVLR Workshop</a>. </p>
-</footer>
+    <footer>
+      <p class="credit" style="text-align: center;"> Website design adapted from
+        <a href="https://nfvlr-workshop.github.io/">NFVLR Workshop</a>. </p>
+    </footer>
 
-</body>
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  </body>
 </html>
