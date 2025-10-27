@@ -1,30 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GroceryVision@ICCV25</title>
-    <meta name="description" content="GroceryVision Challenge at ICCV 2025">
-
-    <!-- Open Graph Related Stuff -->
-    <meta property="og:title" content="The Grocery Vision Challenge">
-    <meta property="og:url" content="https://grocery-vision.github.io">
-    <meta property="og:description" content="CV/ML for Physical Stores">
-    <meta property="og:site_name" content="PhyStore">
-
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
-    <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/lineabasic.css">
-    <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/home.css">
 
     <style>
         .center-align {
@@ -34,11 +11,12 @@
         .left-align {
             text-align: left;
         }
-        
         .happy {
             width: 800px;
             margin: 30px;
+            /* border:solid 1px gray; */
             overflow: hidden; 
+
         }
 
         .bdcard {
@@ -63,16 +41,12 @@
         }
 
         .circleImg {
-            border: none;
-            width: 120px;
-            height: 120px;
-        }
-        
-        .circleImg img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
+            border: black;
+            border-style: solid;
             border-radius: 60px;
+            width: 120px;
+            height: 120px;
+
         }
 
         table {
@@ -86,6 +60,9 @@
         ul {
             list-style-type: disc;
             list-style-position: inside;
+            /*padding-left: 0;*/
+            /*list-style-type: none;*/
+            /*padding: 0;*/
         }
 
         ul li {
@@ -93,17 +70,36 @@
             margin-bottom: 10px;
         }
 
-        div {
-            position: relative;
-        }
 
-        div w {
-            position: absolute;
-            right: 40px;
-            top: 60px;
-            color: white;
-        }
     </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GroceryVision@WACV26</title>
+    <meta name="description" content=" ---">
+
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="The Grocery Vision Challenge" />
+    <meta property="og:url" content="https://grocery-vision.github.io" />
+    <meta property="og:description" content="CV/ML for Physical Stores ---" />
+    <meta property="og:site_name" content="PhyStore" />
+    <meta property="og:image" content />
+    <meta property="og:image:url" content />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">-->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/lineabasic.css">
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+
   </head>
   <body>
 
@@ -119,9 +115,10 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="https://iccv.thecvf.com/"><img
-                src="./img/iccv-navbar-logo.svg" alt="iccv2025 LOGO"
+            <a href="https://wacv.thecvf.com/"><img
+                src="../img/wacv2026-logo.jpg" alt="WACV26 LOGO"
                 style="height:60px;margin-top:3px;"></a>
+            <!-- <a href="https://www.amazon.com/b?ie=UTF8&node=21289116011"><img src="../img/wwgst-logo.png" alt="WWGST LOGO" style="height:60px;margin-top:3px;"></a> -->
           </div>
           <div class="collapse navbar-collapse"
             id="bs-example-navbar-collapse-1">
@@ -134,7 +131,6 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-right"
                 aria-labelledby="dropdownMenu1">
-                <li><a href="./overview.html">Overview</a></li>
                 <li><a
                     href="https://retailvisionworkshop.github.io">RetailVision
                     Workshop</a></li>
@@ -145,8 +141,10 @@
                     Challenge@CVPR24</a></li>
                 <li><a href="./past_challenge/wacv2025.html">GroceryVision
                     Challenge@WACV25</a></li>
-                <li><a href="./index.html">GroceryVision
+                <li><a href="./past_challenge/iccv2025.html">GroceryVision
                     Challenge@ICCV25</a></li>
+                <li><a href="./index.html">GroceryVision
+                    Challenge@WACV26</a></li>
               </ul>
             </div>
           </div>
@@ -156,294 +154,552 @@
 
     <div class="container">
       <div class="page-content">
-        <p><br></p>
+
+        <p><br /></p>
+        <style type="text/css">
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            div {
+                position: relative;
+            }
+
+            div w {
+                position: absolute;
+                right: 40px;
+                top: 60px;
+                color: white;
+            }
+        </style>
         <div>
-          <img src="./img/hawaii.jpg" style="width:100%; min-height:200px;"
-            alt="Hawaii">
-          <strong>
-            <w
-              style="line-height:0.8; text-align: right; margin-top: 240px; margin-left: 50px; font-size: 24px;">
-              <a href="https://retailvisionworkshop.github.io"> ICCV25
-                RetailVision Workshop </a>
-            </w>
-          </strong>
-
-          <strong>
-            <w
-              style="line-height:0.8; text-align: center; margin-top: 250px; font-size: 32px;"><br>
-              The 4th GroceryVision Challenge <br></w>
-          </strong>
-
-          <w
-            style="line-height:0.6; margin-top: 255px; font-size: 24px;"><br><br><br><br><br>Time
-            TBD, Saturday, October 18th, 2025,
-            Honolulu, HI<br><br><br><br><br></w>
+          <img src="../img/wwgst-logo.png" style="width:100%;" />
         </div>
-
         <div>
-          <div class="left-align" id="challenges">
-            <div class="col-xs-12">
-              <br><br>
-              <h1><b>Dataset Challenges</b></h1>
-              <br>
-              <p>
-                As part of the RetailVision workshop, two challenge tracks will
-                be made available from the Grocery Vision 2023 datset consisting
-                of real-world, physical retail data collected in typical grocery
-                store environments. These challenge datasets contain anonymized
-                individual shopping actions collected with a GoPro camera
-                mounted to a standard US shopping cart. These challenges are:
-              </p>
-            </div>
-          </div>
+          <img src="../img/tuscon-2026.jpg" style="width:100%; min-height:200px;" />
+          <font size="6"><strong>
+              <w
+                style="line-height:0.8; text-align: right; margin-top: 240px; margin-left: 50px; text-shadow: 2px 2px 0px #000000">
+                3rd Physical Retail AI Workshop (PRAW)
+                <pr />
+              </w>
+            </strong></font>
 
-          <div class="row" style="margin-left: auto;">
-            <p>
-              <h3><b>Track 1: Video Temporal Action Localization (TAL) and
-                  Spatial Temporal Action Localization (STAL):</b></h3>
+          <font size="7"><strong>
+              <w
+                style="line-height:0.8; text-align: center; margin-top: 250px; text-shadow: 2px 2px 0px #000000"><br>
+                Foundation Models and GenAI Technologies for Physical
+                Retail<br /></w>
+            </strong></font>
 
-              <p class="text-center">
-                <video width="800" height="600" controls>
-                  <source src="./vid/tal-stal-mosaic-final.mp4"
-                    type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </p>
-              <br><br>
-              The TAL and STAL challenges aim at localizing products associated
-              with actions of interest in video. The environment the video is
-              captured in is a physical retail grocery store and the capture
-              system consists of a camera mounted on a regular shopping cart
-              looking inwards at the basket volume. The TAL challenge will
-              consist of training a model that localizes temporally, (along the
-              time axis) the actions of interest in each video in the dataset.
-              STAL on the other hand will involve localizing the product
-              associated with the action spatially and temporally in the video.
-              The action of interest in this challenge is one of three common
-              place actions performed by people shopping with grocery carts;
-              Take: Putting a product into the basket, Return: Removing a
-              product out of the basket and Rummage: Moving products around in
-              the basket. We will evaluate the models performance based on
-              frame-mAP (temporal localization) and tube-mAP (spatio-temporal
-              localization).
-              <br><br>
-              In this task, participants will be provided with 73,683 images and
-              annotation pairs for download as training set.
-              <br><br>
-              <h3><b>Track 2: Multi-modal Product Retrieval (MPR):</b></h3>
-              <img src="./img/example_mpr.png"
-                style="width:60%; margin-left: 15%;" alt="MPR Example"><br><br>
-              The goal of MPR challenge is to retrieve the product identity from
-              an open pool of candidate products. Participants will be given a
-              training dataset consisting of (i) images for different products,
-              and (ii) textual description of the products, and are expected to
-              design methods to accurately retrieve the product identity by
-              measuring similarity between images and textual descriptions. For
-              evaluation, a held out set of probe images and a pool of textual
-              description of catalog products will be passed to the model. The
-              model is expected to output a ranked list of catalog products
-              based on the similarity between images and descriptions. We use
-              Cumulative Matching Characteristics (CMC) to evaluate performance
-              of each solution.
-            </p>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <h4><b>Download the dataset:</b></h4>
-              <p>
-                This dataset is released under CC BY-NC 4.0 license. Please
-                review the <a href="docs/LICENSE.pdf">license</a> and an email
-                to <b>retailvision4challenge@amazon.com</b> to receive a link to
-                download the dataset. Please include your (1) name, (2) email
-                (affliation email, not @gmail etc.), (3) purpose of using the
-                dataset. We will respond as soon as possible.
-              </p>
+          <font size="6">
+            <w
+              style="line-height:0.6; margin-top: 255px; text-shadow: 2px 2px 0px #000000"><br><br><br><br><br><br><br>TBD, March 2026
+              WACV<br /><br /><br /><br /><br /></br></br></w>
+      </font>
 
-              <h5><b>Submit Results:</b></h5>
-              <p>
-                Once completed, please submit all the files to run your proposed
-                model as a zip file, or a download link to
-                retailvision4challenge@amazon.com. Please provide a Python
-                inference code and instructions to setup the environment. Your
-                submission will be evaluated against a holdout test set which is
-                not released publicly.
-              </p>
-              <p><b>For the TAL Challenge:</b><br>
-                The output of your solution should consist of a set of text
-                files — one per input video. In each text file please list each
-                predicted action in the video on a separate line in the
-                following format:
-                <br>&lt;start_frame, end_frame, action_class, confidence&gt;<br>
-                Please list the confidence associated with the action class
-                which will enable us to compute frame-mAP.
-              </p>
-              <p><b>For the STAL Challenge:</b><br>
-                The output of your solution should consist of a set of text
-                files — one per input video. In each text file please list each
-                predicted action tubelet in the video as a separate element of a
-                list in the following format: [tube_1, tube_2, ..., tube_n]
-                Each tubelet should be formatted like the following:
-                <pre><code>{"track": [[f,x0,y0,x1,y1,c], [f,x0,y0,x1,y1,c], ..., [f,x0,y0,x1,y1,c]], "conf": &lt;float [0-1]&gt;, "cat": &lt;"take"|"return"|"rummage"&gt;}</code></pre>
-                where f,x0,y0,x1,y1, and c refer to frame number, normalized
-                bbox coordinates, and bbox confidence. The "conf" field
-                represents the overall prediction confidence of the tubelet and
-                will be used to compute the tube-mAP score, while "cat" is its
-                predicted action category.
-                Note: We expect bbox predictions to occur on consecutive frames
-                and also expect that you perform your own prediction smoothing
-                across all windows that your model makes predictions for to
-                ensure long actions are combined into a single tubelet.
-              </p>
-              <p><b>For the MBR Challenge:</b><br>
-                Please include python scripts to infer the category based on
-                input images, for example:
-                <pre><code>python infer.py --images ${path to probe images(jpg)} --catalog ${catalog_texts.json} --output ${file containing an ordering of candidate products}.</code></pre>
-                We run the inference on each set of product images in our
-                evaluation dataset.<br>
-                <b>Input:</b> the model should take in a folder containing .jpg
-                images of a product, plus a .json file containing the
-                description of catalog products.<br>
-                <b>Output:</b> For each execution of inference, a .txt output
-                file is expected, which contains the ordering of candidate
-                products for the given probe images. In the resulting .txt file,
-                the ranked list of products is stored, one barcode per row.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align: left;">
-          <div class="left-align" id="Dates">
-            <div class="col-xs-12">
-              <br>
-              <h1><b>Important Dates</b></h1>
-              <br>
-            </div>
-          </div>
-
-          <table style="margin: 0 auto; width: 90%; line-height: 2;">
-            <thead>
-              <tr style="background-color: lightgrey;">
-                <th style="padding-left: 20px;">Challenge Submissions</th>
-                <th style="padding-left: 20px;">Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="padding-left: 20px;">💪 Challenge Registration
-                  Deadline and Training Data Release</td>
-                <td style="padding-left: 20px;">June 6th, 2025</td>
-              </tr>
-              <tr style="background-color: #f2f2f2;">
-                <td style="padding-left: 20px;">💪 Challenge Results Submission
-                  Deadline</td>
-                <td style="padding-left: 20px;">August 1st, 2025</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px;">💪 Challenge Winner
-                  Notification</td>
-                <td style="padding-left: 20px;">August 22nd, 2025</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div style="text-align: center;">
-          <div class="left-align" id="orgnizer">
-            <div class="col-xs-12">
-              <br><br>
-              <h1><b>Organizers</b></h1>
-              <br>
-            </div>
-          </div>
-
-          <div class="row" id="org">
-            <div class="col"
-              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-              <div class="circleImg">
-                <a href="https://www.linkedin.com/in/quanfu-fan-84a2185"><img
-                    src="img/quanfu-photo.jpg"
-                    style="border-radius: 60px; width: 120px; height: 120px; object-fit: cover;"
-                    alt="Dr. Quanfu Fan"></a>
-                <div style="display: inline-block; text-align: center;">
-                  <p style="text-align: center; font-size:80%;"> Dr. Quanfu Fan
-                    <br>(Amazon)</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col"
-              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-              <div class="circleImg">
-                <a href="https://weijian-li.github.io/"><img
-                    src="img/Weijian.jpg"
-                    style="border-radius: 60px;" alt="Dr. Weijian Li"></a>
-                <div style="display: inline-block; text-align: center;">
-                  <p style="text-align: center; font-size:80%;"> Dr. Weijian
-                    Li<br>(Amazon)</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col"
-              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-              <div class="circleImg">
-                <a href="https://www.linkedin.com/in/shun-miao-1016511b/"><img
-                    src="img/shun-miao.jpeg"
-                    style="border-radius: 60px;" alt="Dr. Shun Miao"></a>
-                <div style="display: inline-block; text-align: center;">
-                  <p style="text-align: center; font-size:80%;"> Dr. Shun Miao
-                    <br>(Amazon)</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col"
-              style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
-              <div class="circleImg">
-                <a href="https://www.linkedin.com/in/seanxiangma"><img
-                    src="img/Sean.jpeg"
-                    style="border-radius: 60px;" alt="Dr. Sean Ma"></a>
-                <div style="display: inline-block; text-align: center;">
-                  <p style="text-align: center; font-size:80%;"> Dr. Sean Ma
-                    <br>(Amazon)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="container">
-      <div id="sponsors">
-        <div>
-          <br><br>
-          <h1><b>Sponsors</b></h1>
+    <!-- <br/><br/> -->
+    <!-- <div class="row"> -->
+    <!--   <div class="col-xs-12"> -->
+    <!--     <p style="color:red; font-size:30px;"> -->
+    <!--       <b>Paper submissions are now live! <a href="https://cmt3.research.microsoft.com/PRAW2025/Submission/Index">[SUBMIT]</a></b> -->
+    <!--     </p> -->
+    <!--   </div> -->
+    <!-- </div> -->
+
+    <div style="text-align: left;">
+      <div class="left-align" id="Overview">
+        <div class="col-xs-12">
+          <br />
+          <h1><b>Overview and Topics</b></h1>
+          <br />
         </div>
       </div>
-      <br>
-      <div class="row" id="org">
-        <div class="col"
-          style="display: block; width: 800px; height: 250px; margin: 0 auto;">
-          <div>
-            <a href="https://www.amazon.com/b?ie=UTF8&node=21289116011"><img
-                src="./img/wwgst-logo.png" style="border-radius: 10px;"
-                alt="Amazon Logo"></a>
-          </div>
-        </div>
-      </div>
-    </div>
+      <p> In an evolving world in which consumers have a plurality of shopping
+        methods available to them, physical “brick and mortar” stores continue
+        to be the preferred means of shopping around the world. From groceries
+        to clothing, customers continue to show strong demand for in person
+        shopping.</p>
+      <p> Applications of vision-based Artificial Intelligence (AI) methods are
+        increasingly present throughout society. Fueled by recent advances in
+        Computer Vision, Deep Learning, web-scale training of vision and
+        language models (“foundation models”), and edge compute, AI applications
+        have expanded into a novel array of industries and products. In
+        particular, the physical retail and grocery sectors have recently
+        experienced an explosion of AI-enabled technologies, allowing for more
+        efficient, effortless, and engaging experiences for shoppers, enabling
+        the reduction of shrinkage for retailers, and providing insights on
+        improving store efficiency, thereby reducing operational costs. Computer
+        Vision applications are being deployed to numerous retail sectors,
+        including small convenience stores, large grocery stores, fashion
+        stores, and shopping carts, to name but a few.</p>
+      <p>The focus of this workshop includes active areas of research and
+        development in the physical retail space, including:</p>
+      <ul>
+        <li> Multi-modal modeling for shopping activity recognition, product
+          detection/tracking/identification, and product quantity estimation
+          <li> Applications of Generative AI and Large Language Models (LLM) to
+            Physical Retail applications
+            <li> Zero-Shot learning methods and approaches for activity
+              recognition and understanding, appearance-based classification,
+              and object detection
+              <li> Zero-shot data labeling with foundation models
+                <li> Appearance-based classification from a large gallery of
+                  product classes in the wild and open-set recognition (OSR)
+                  <li> Store analytics and shopping cart localization within a
+                    store environment
+                    <li> Generative models and systems for synthetic data
+                      generation of images and videos paired with ground truth
+                      labels
+                    </ul>
+                  </div>
 
-    <footer>
-      <p class="credit" style="text-align: center;"> Website design adapted from
-        <a href="https://nfvlr-workshop.github.io/">NFVLR Workshop</a>. </p>
-    </footer>
+                  <div style="text-align: left;">
+                    <div class="left-align" id="Dates">
+                      <div class="col-xs-12">
+                        <br />
+                        <h1><b>Important Dates</b></h1>
+                        <br />
+                      </div>
+                    </div>
 
-    <!-- JavaScript files -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                    <table style="margin: 0 auto; width: 90%; line-height: 2;">
+                      <thead>
+                        <tr style="background-color: lightgrey;">
+                          <th style="padding-left: 20px;">Paper Submissions</th>
+                          <th style="padding-left: 20px;">Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding-left: 20px;">Call For Paper
+                            Release</td>
+                          <td style="padding-left: 20px;">11/08/2025</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px;">Call For Challenge Submission
+                            Release</td>
+                          <td style="padding-left: 20px;">11/08/2025</td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td style="padding-left: 20px;">Paper Submission
+                            Deadline</td>
+                          <td style="padding-left: 20px;">12/20/2025</td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td style="padding-left: 20px;">Challenge Submission
+                            Deadline</td>
+                          <td style="padding-left: 20px;">01/15/2026</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px;">Notification of
+                            Paper Acceptance</td>
+                          <td style="padding-left: 20px;">01/15/2026</td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td style="padding-left: 20px;">Camera-Ready Paper
+                            Deadline (to be included in the proceeding)</td>
+                          <td style="padding-left: 20px;">01/30/2026</td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td style="padding-left: 20px;">Challenge Results Release and Winner Notification</td>
+                          <td style="padding-left: 20px;">01/30/2026</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
-  </body>
-</html>
+                  <!-- <div style="text-align: left;"> -->
+                  <!--   <div class="left-align" id="Dates"> -->
+                  <!--     <div class="col-xs-12"> -->
+                  <!--       <br/> -->
+                  <!--       <h1><b>Invited Speakers</b></h1> -->
+                  <!--       <br/> -->
+                  <!--     </div> -->
+                  <!--   </div> -->
+
+                  <!--   <table style="margin: 0 auto; width: 90%; line-height: 2;"> -->
+                  <!--     <thead> -->
+                  <!--       <tr style="background-color: lightgrey;"> -->
+                  <!--         <th style="padding-left: 20px;">Name</th> -->
+                  <!--         <th style="padding-left: 20px;">Title/Institution</th> -->
+                  <!--       </tr> -->
+                  <!--     </thead> -->
+                  <!--     <tbody> -->
+                  <!--       <tr> -->
+                  <!--         <td style="padding-left: 20px;">Dr. Yosi Keller</td> -->
+                  <!--         <td style="padding-left: 20px;">Principal Applied Scientist @<a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root">Amazon Prime Video</a>; Prof. @<a href="https://cris.biu.ac.il/en/persons/yosi-keller">Bar-Ilan University</a></td> -->
+                  <!--       </tr> -->
+                  <!--       <tr style="background-color: #f2f2f2;"> -->
+                  <!--         <td style="padding-left: 20px;">Dr. Lorenzo Stacchio</td> -->
+                  <!--         <td style="padding-left: 20px;">Research Fellow @<a href="https://www.unimc.it/en">University of Macerata</a></td> -->
+                  <!--       </tr> -->
+                  <!--       <tr> -->
+                  <!--         <td style="padding-left: 20px;">Dr. Xiaoqing Ge</td> -->
+                  <!--         <td style="padding-left: 20px;">Manager of Applied Science @<a href="https://justwalkout.com">Amazon Just Walk Out (JWO)</a></td> -->
+                  <!--       </tr> -->
+                  <!--       <tr style="background-color: #f2f2f2;"> -->
+                  <!--         <td style="padding-left: 20px;">Dr. Carlos Castillo</td> -->
+                  <!--         <td style="padding-left: 20px;">Principal Applied Scientist @<a href="https://one.amazon.com">Amazon One</a></td> -->
+                  <!--       </tr> -->
+                  <!--     </tbody> -->
+                  <!--   </table> -->
+                  <!-- </div> -->
+
+                  <div style="text-align: left;">
+                    <div class="left-align" id="Dates">
+                      <div class="col-xs-12">
+                        <br />
+                        <h1><b>Tentative Workshop Schedule</b></h1>
+                        <br />
+                      </div>
+                    </div>
+
+                    <table style="margin: 0 auto; width: 100%; line-height: 2;">
+                      <thead>
+                        <tr style="background-color: lightgrey;">
+                          <th style="padding-left: 20px;">Time</th>
+                          <th style="padding-left: 20px;">Talk</th>
+                          <th style="padding-left: 20px;">Name</th>
+                          <th style="padding-left: 20px;">Title/Institution</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">08:30-08:45AM</td>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;"><b>Opening
+                              Remarks</b></td>
+                          <td style="font-size: 12px; padding-left: 20px;">TBD</td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">08:45-09:15AM</td>
+                          <td style="font-size: 12px; padding-left: 20px;">
+                            <div><b>Invited Talk:</b></div>
+                            <div>TBD</div>
+                          </td>
+                          <td style="font-size: 12px; padding-left: 20px;">Invited Speaker 1</td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">09:15-09:45AM</td>
+                          <td style="font-size: 12px; padding-left: 20px;">
+                            <div><b>Invited Talk:</b></div>
+                            <div>TBD</div>
+                          </td>
+                          <td style="font-size: 12px; padding-left: 20px;">Invited Speaker 2</td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">09:45-10:05AM</td>
+                          <td style="font-size: 12px; padding-left: 20px;">
+                            <div><b>Paper Presentation:</b></div>
+                            <div>TBD</div>
+                          </td>
+                          <td style="font-size: 12px; padding-left: 20px;">Paper Author 1</td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">10:05-10:20AM</td>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">COFFEE
+                            BREAK</td>
+                          <td style="font-size: 12px; padding-left: 20px;"></td>
+                          <td style="font-size: 12px; padding-left: 20px;"></td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">10:20-10:50AM</td>
+                          <td style="font-size: 12px; padding-left: 20px;">
+                            <div><b>Invited Talk:</b></div>
+                            <div>TBD</div>
+                          </td>
+                          <td style="font-size: 12px; padding-left: 20px;">Dr.
+                            Yosi Keller</td>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">Principal
+                            Applied Scientist @<a
+                              href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root">Amazon
+                              Prime Video</a>; Prof. @<a
+                              href="https://cris.biu.ac.il/en/persons/yosi-keller">Bar-Ilan
+                              University</a></td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">10:50-11:20AM</td>
+                          <td style="font-size: 12px; padding-left: 20px;">
+                            <div><b>Invited Talk:</b></div>
+                            <div>TBD</div>
+                          </td>
+                          <td style="font-size: 12px; padding-left: 20px;">Dr.
+                            Shun Miao</td>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">Principal Scientist @ Amazon Worldwide Grocery Stores Technologies</a></td>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">11:20-11:40AM</td>
+                          <td style="font-size: 12px; padding-left: 20px;">
+                            <div><b>Challenge winner Presentation:</b></div>
+                            <div>TBD</div>
+                          </td>
+                          <td style="font-size: 12px; padding-left: 20px;">Challenge winner team</td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;">11:40-11:50AM</td>
+                          <td
+                            style="font-size: 12px; padding-left: 20px;"><b>Closing
+                              Remarks</b></td>
+                          <td style="font-size: 12px; padding-left: 20px;">TBD</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- <div> -->
+                  <!--     <div class="left-align" id="challenges"> -->
+                  <!--         <div class="col-xs-12"> -->
+                  <!--             <br/><br/> -->
+                  <!--             <h1><b>Dataset Challenges</b></h1> -->
+                  <!--             <br/> -->
+                  <!-- 	    <p> -->
+                  <!-- 	      As part of this workshop, two challenge tracks will be made available from the Grocery Vision 2023 datset consisting of real-world, physical retail data collected in typical grocery store environments. These challenge datasets contain anonymized individual shopping actions collected with a GoPro camera mounted to a standard US shopping cart. These challenges are: -->
+                  <!-- 	    </p> -->
+                  <!--         </div> -->
+                  <!--     </div> -->
+
+                  <!--     <div class="row" , style="margin-left: auto;"> -->
+                  <!--       <p> -->
+                  <!-- 	<h3><b>Track 1: Video Temporal Action Localization (TAL) and Spatial Temporal Action Localization (STAL):</b></h3> -->
+
+                  <!--       <p class="text-center"> -->
+                  <!--           <\!-- <img src="../img/example_stal.png" style="width:50%;margin-left: 20%;"/><br/><br/> -\-> -->
+                  <!-- 	  <video width="800px" height="600px" controls="controls"> -->
+                  <!-- 	    <source src="../vid/tal-stal-mosaic-final.mp4" type="video/mp4" /> -->
+                  <!-- 	  </video> -->
+                  <!--       </p> -->
+                  <!-- 	<br/><br/>  -->
+                  <!-- 	The TAL and STAL challenges aim at localizing products associated with actions of interest in video. The environment the video is captured in is a physical retail grocery store and the capture system consists of a camera mounted on a regular shopping cart looking inwards at the basket volume. The TAL challenge will consist of training a model that localizes temporally, (along the time axis) the actions of interest in each video in the dataset. STAL on the other hand will involve localizing the product associated with the action spatially and temporally in the video. The action of interest in this challenge is one of three common place actions performed by people shopping with grocery carts; Take: Putting a product into the basket, Return: Removing a product out of the basket and Rummage: Moving products around in the basket. We will evaluate the models performance based on frame-mAP (temporal localization) and tube-mAP (spatio-temporal localization). -->
+                  <!-- 	<br/><br/>  -->
+                  <!-- 	In this task, participants will be provided with 73,683 images and annotation pairs for download as training set. -->
+                  <!--         <br/><br/> -->
+                  <!-- 	<h3><b>Track 2: Multi-modal Product Retrieval (MPR):</b></h3> -->
+                  <!--         <img src="../img/example_mpr.png" style="width:60%; margin-left: 15%;"/><br/><br/> -->
+                  <!-- 	The goal of MPR challenge is to retrieve the product identity from an open pool of candidate products. Participants will be given a training dataset consisting of (i) images for different products, and (ii) textual description of the products, and are expected to design methods to accurately retrieve the product identity by measuring similarity between images and textual descriptions. For evaluation, a held out set of probe images and a pool of textual description of catalog products will be passed to the model. The model is expected to output a ranked list of catalog products based on the similarity between images and descriptions. We use Cumulative Matching Characteristics (CMC) to evaluate performance of each solution. -->
+                  <!--         <\!-- ABV challenge aims at validating if the model is able to match the query product image to the corresponding image in gallery. Participants will be given a training dataset consisting of images for different products and are expected to design methods for accurate matching product identities. During testing, held out query images will be used to probe the proposed model. The model is expected to output a ranking list of items based on the matching the model predicts. To evaluate model performance, Cumulative Matching Characteristics (CMC) curves will be used. -\-> -->
+                  <!-- 	<br/><br/>  -->
+                  <!--       </p> -->
+                  <!--     </div> -->
+                  <!--     <div class="row"> -->
+                  <!--       <div class="col-xs-12"> -->
+                  <!--         <p> -->
+                  <!--           <b>Download the dataset:</b><br/><br/> -->
+                  <!--           This dataset is released under CC BY-NC 4.0 license. Please review the <a href="docs/LICENSE.pdf">license</a> and an email to <b>retailvision4challenge@amazon.com</b> to receive a link to download the dataset. Please include your (1) name, (2) email (affliation email, not @gmail etc.), (3) purpose of using the dataset. We will respond as soon as possible. -->
+                  <!--         </p> -->
+
+                  <!--         <p> -->
+                  <!--           <b>Submit results:</b> <br/><br/> -->
+                  <!--           To participate in the evaluation, please submit the files necessary to run inference with your method. It will be runned on held out testsets to benchmark with the other submissions. -->
+                  <!--         </p>     -->
+                  <!--       </div> -->
+                  <!--     </div> -->
+                  <!-- </div> -->
+
+                  <div style="text-align: center;">
+                    <div class="left-align" id="orgnizer">
+                      <div class="col-xs-12">
+                        <br /><br />
+                        <h1><b>Organizers</b></h1>
+                        <br />
+                      </div>
+                    </div>
+
+                    <div class="row" id="org">
+                      <div class="col"
+                        style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+                        <div class="circleImg">
+                          <a href="https://www.linkedin.com/in/seanxiangma"><img
+                              src="../img/Sean.jpeg"
+                              style="border-radius: 60px; text-align: center; caption-side: bottom;"></a>
+                          <caption
+                            style="display: inline-block; text-align: center;">
+                            <p style="text-align: center; font-size:80%;"> Dr.
+                              Sean Ma <br />(Amazon)</p>
+                          </caption>
+                        </div>
+                      </div>
+                      <div class="col"
+                        style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+                        <div class="circleImg">
+                          <a
+                            href="https://www.linkedin.com/in/shun-miao-1016511b"><img
+                              src="../img/shun-miao.jpeg"
+                              style="border-radius: 60px; text-align: center; caption-side: bottom;"></a>
+                          <caption
+                            style="display: inline-block; text-align: center;">
+                            <p style="text-align: center; font-size:80%;"> Dr.
+                              Shun Miao <br />(Amazon)</p>
+                          </caption>
+                        </div>
+                      </div>
+                      <div class="col"
+                        style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+                        <div class="circleImg">
+                          <a
+                            href="https://www.linkedin.com/in/quanfu-fan-84a2185"><img
+                              src="../img/quanfu-photo.jpg"
+                              style="border-radius: 60px; text-align: center; caption-side: bottom;"></a>
+                          <caption
+                            style="display: inline-block; text-align: center;">
+                            <p style="text-align: center; font-size:80%;"> Dr.
+                              Quanfu Fan <br />(Amazon)</p>
+                          </caption>
+                        </div>
+                      </div>
+                      <div class="col"
+                        style="display: inline-block; width: 120px; height: 120px; margin-left: 10px">
+                        <div class="circleImg">
+                          <a
+                            href="https://www.linkedin.com/in/roccopietrini/"><img
+                              src="../img/rocco.jpg"
+                              style="border-radius: 60px; text-align: center; caption-side: bottom;"></a>
+                          <caption
+                            style="display: inline-block; text-align: center;">
+                            <p style="text-align: center; font-size:80%;"> Dr.
+                              Rocco Pietrini <br />(VRAI Lab)</p>
+                          </caption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div> -->
+                  <!--     <div class="left-align" id="challenges"> -->
+                  <!--         <div class="col-xs-12"> -->
+                  <!--             <br/><br/> -->
+                  <!--             <h1><b>Challenge Leaderboards</b></h1> -->
+                  <!--             <br/> -->
+                  <!-- 	    <p> -->
+                  <!-- 	      Congratulations to the top submissions to the GroveryVision challenge as part of the RetailVision Workshop at CVPR 2024! -->
+                  <!-- 	      <ul> -->
+                  <!-- 		<li> Track 1 (TAL/STAL): Team Tencent WeChat AI -->
+                  <!-- 		<li> Track 2 (MPR): Team Tencent WeChat AI -->
+                  <!-- 	      </ul> -->
+                  <!-- 	    </p> -->
+                  <!--             <br/><br/> -->
+                  <!--             <h2><b>Track 1 Leaderboard</b></h2> -->
+                  <!-- 	    <table style='font-family:"Courier New", Courier, monospace; font-size:75%; border: 1px solid black; border-collapse: collapse;'> -->
+                  <!-- 	      <tr style="background-color:#F4A493"> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;"></th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;"></th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;"></th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">TAL</th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">TAL</th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">TAL</th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">STAL</th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">STAL</th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">STAL</th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	      <tr style="background-color:#F4A493;"> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   Rank   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   Participant   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   Year   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   mAP@IoU=0.25   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   mAP@IoU=0.5   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   mAP@IoU=0.5:0.05:0.95   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   mAP@IoU=0.25   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   mAP@IoU=0.5   </th> -->
+                  <!-- 		<th style="text-align: center; border-right: 1px solid black; border-collapse: collapse; padding: 3px;">   mAP@IoU=0.5:0.05:0.95   </th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	      <tr style="text-align: center; border: 1px solid black; border-collapse: collapse;"> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">1</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">Tencent WeChat AI</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">2024 (CVPR) </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">0.554</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">0.487</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">0.295</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">0.613</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">0.22</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">0.059</th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	      <tr style="text-align: center; border: 1px solid black; border-collapse: collapse; background-color:#C0C0C0;"> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">/</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">STMixer ViT-B (Baseline)</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">2024 (CVPR) </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">TBD</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">TBD</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">TBD</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">TBD</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">TBD</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">TBD</th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	    </table> -->
+                  <!-- 	    <br/><br/> -->
+                  <!--             <h2><b>Track 2 Leaderboard</b></h2> -->
+                  <!-- 	    <table style='font-family:"Courier New", Courier, monospace; font-size:75%; border: 1px solid black; border-collapse: collapse;'> -->
+                  <!-- 	      <tr style="background-color:#F4A493;"> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">   Rank   </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">   Participant   </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">   Year   </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">   CMC Top-1   </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">   CMC Top-5   </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">   CMC Top-30   </th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	      <tr style="text-align: center; border: 1px solid black; border-collapse: collapse;"> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">1</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">Tencent WeChat AI</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">2024 (CVPR) </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">80.57</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">95.56</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">99.02</th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	      <tr style="text-align: center; border: 1px solid black; border-collapse: collapse;"> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">2</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">Amazon MENA Tech.</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">2024 (CVPR) </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">47.03</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">78.70</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">96.63</th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	      <tr style="text-align: center; border: 1px solid black; border-collapse: collapse;"> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">3</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">Raghul Asokan (Infilect)</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">2024 (CVPR) </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">12.78</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">22.27</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">32.12</th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	      <tr style="text-align: center; border: 1px solid black; border-collapse: collapse; background-color:#C0C0C0;"> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">/</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">MLP w/ CLIP Features (Baseline)</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">2024 (CVPR) </th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">75.87</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">91.22</th> -->
+                  <!-- 		<th style="text-align: center; border: 1px solid black; border-collapse: collapse; padding: 3px;">97.43</th> -->
+                  <!-- 	      </tr> -->
+                  <!-- 	    </table> -->
+                  <!--         </div> -->
+                  <!--     </div> -->
+                  <!-- </div> -->
+
+                </div>
+              </div>
+
+              <p><br /></p>
+
+              <footer>
+                <hr>
+                <p class="credit" style="text-align: center;"> Website design
+                  adapted from <a href="https://nfvlr-workshop.github.io/">NFVLR
+                    Workshop</a>. </p>
+              </footer>
+
+            </body>
+
+          </html>
